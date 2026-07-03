@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoForm Design | Portfólio Automotivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">AutoForm<span>Design</span></div>
+    <nav class="nav">
+      <a href="#home">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#processo">Processo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">Design automotivo conceitual</p>
+        <h1>Projetos que unem <span>forma, velocidade</span> e inovação.</h1>
+        <p class="hero-text">
+          Portfólio digital para estudo, apresentação e desenvolvimento de conceitos automotivos com foco em identidade, aerodinâmica e linguagem visual.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn primary">Ver projetos</a>
+          <a href="#contato" class="btn secondary">Solicitar proposta</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="car-preview">
+          <div class="car-body"></div>
+          <div class="wheel wheel-left"></div>
+          <div class="wheel wheel-right"></div>
+        </div>
+        <div class="stats">
+          <div>
+            <strong>12+</strong>
+            <span>conceitos</span>
+          </div>
+          <div>
+            <strong>3D</strong>
+            <span>renders</span>
+          </div>
+          <div>
+            <strong>UX</strong>
+            <span>apresentação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="section-header">
+        <p class="tag">Portfólio</p>
+        <h2>Projetos em destaque</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image gradient-1"></div>
+          <h3>Astra GT</h3>
+          <p>Conceito esportivo com linhas agressivas e proporção baixa.</p>
+          <button class="project-btn" data-project="Astra GT">Ver detalhes</button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image gradient-2"></div>
+          <h3>Nova Urban EV</h3>
+          <p>Hatch elétrico pensado para mobilidade urbana premium.</p>
+          <button class="project-btn" data-project="Nova Urban EV">Ver detalhes</button>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image gradient-3"></div>
+          <h3>Torque X</h3>
+          <p>SUV conceitual com presença robusta e iluminação futurista.</p>
+          <button class="project-btn" data-project="Torque X">Ver detalhes</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark" id="processo">
+      <div class="section-header">
+        <p class="tag">Etapas</p>
+        <h2>Processo criativo</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>01</span>
+          <h3>Pesquisa</h3>
+          <p>Referências, público-alvo, tendências e briefing do projeto.</p>
+        </div>
+        <div class="timeline-item">
+          <span>02</span>
+          <h3>Sketch</h3>
+          <p>Exploração de volumes, proporções e linguagem formal.</p>
+        </div>
+        <div class="timeline-item">
+          <span>03</span>
+          <h3>Modelagem</h3>
+          <p>Construção digital e refinamento de superfícies.</p>
+        </div>
+        <div class="timeline-item">
+          <span>04</span>
+          <h3>Render final</h3>
+          <p>Iluminação, materiais e apresentação visual impactante.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="about">
+        <div>
+          <p class="tag">Sobre o projeto</p>
+          <h2>Um site para apresentar visão e identidade de design.</h2>
+          <p>
+            Este modelo foi criado para estudantes, designers e estúdios que desejam mostrar seu trabalho com clareza e sofisticação.
+            O layout valoriza processo, imagem e narrativa visual.
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>Recursos</h3>
+          <ul>
+            <li>Layout responsivo</li>
+            <li>Menu mobile</li>
+            <li>Animações suaves</li>
+            <li>Cartões interativos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="section-header">
+        <p class="tag">Contato</p>
+        <h2>Vamos falar sobre o seu projeto</h2>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Seu nome" />
+          <input type="email" placeholder="Seu e-mail" />
+        </div>
+        <input type="text" placeholder="Assunto" />
+        <textarea rows="6" placeholder="Descreva sua ideia de projeto"></textarea>
+        <button type="submit" class="btn primary">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>AutoForm Design © 2026 — Projeto de design automotivo.</p>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeBtn">×</button>
+      <h3 id="modalTitle">Projeto</h3>
+      <p id="modalText">Detalhes do projeto serão exibidos aqui.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
