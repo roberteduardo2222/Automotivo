@@ -1,176 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoForm Design | Portfólio Automotivo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<!-- Define o conjunto de caracteres da página como UTF-8 -->
+<meta charset="UTF-8" />
+<!-- Ajusta a viewport para tornar a página responsiva em dispositivos móveis -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Título que aparece na aba do navegador -->
+<title>AutoForm Design | Portfólio Automotivo</title>
+<!-- Otimização: preconexão ao servidor de fontes do Google para acelerar carregamento -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Preconexão ao domínio de fontes estáticas, com atributo crossorigin para CORS -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Importa a fonte "Inter" com vários pesos via Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Link para o arquivo de estilos CSS local -->
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="logo">AutoForm<span>Design</span></div>
-    <nav class="nav">
-      <a href="#home">Início</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#processo">Processo</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <button class="menu-btn" id="menuBtn">☰</button>
-  </header>
+<!-- Cabeçalho da página contendo logo, navegação e botão de menu (para mobile) -->
+<header class="header">
+<!-- Elemento de marca/logotipo; span usado para estilizar parte do texto -->
+<div class="logo">AutoForm<span>Design</span></div>
+<!-- Navegação principal com links âncora para seções internas -->
+<nav class="nav">
+<a href="#home">Início</a>
+<a href="#projetos">Projetos</a>
+<a href="#processo">Processo</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+<!-- Botão de menu; normalmente controlado por JavaScript para abrir/fechar nav em telas pequenas -->
+<button class="menu-btn" id="menuBtn">☰</button>
+</header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="tag">Design automotivo conceitual</p>
-        <h1>Projetos que unem <span>forma, velocidade</span> e inovação.</h1>
-        <p class="hero-text">
-          Portfólio digital para estudo, apresentação e desenvolvimento de conceitos automotivos com foco em identidade, aerodinâmica e linguagem visual.
-        </p>
-        <div class="hero-actions">
-          <a href="#projetos" class="btn primary">Ver projetos</a>
-          <a href="#contato" class="btn secondary">Solicitar proposta</a>
-        </div>
-      </div>
+<main>
+<!-- Seção hero (apresentação inicial) com id para link âncora -->
+<section class="hero" id="home">
+<div class="hero-content">
+<!-- Tag descritiva curta -->
+<p class="tag">Design automotivo conceitual</p>
+<!-- Título principal; span para destacar parte do texto -->
+<h1>Projetos que unem <span>forma, velocidade</span> e inovação.</h1>
+<!-- Parágrafo explicativo sobre o propósito do portfólio -->
+<p class="hero-text">
+Portfólio digital para estudo, apresentação e desenvolvimento de conceitos automotivos com foco em identidade, aerodinâmica e linguagem visual.
+</p>
+<!-- Ações principais (botões) do hero -->
+<div class="hero-actions">
+<!-- Botões com classes para estilos diferentes; links âncora para seções -->
+<a href="#projetos" class="btn primary">Ver projetos</a>
+<a href="#contato" class="btn secondary">Solicitar proposta</a>
+</div>
+</div>
 
-      <div class="hero-card">
-        <div class="car-preview">
-          <div class="car-body"></div>
-          <div class="wheel wheel-left"></div>
-          <div class="wheel wheel-right"></div>
-        </div>
-        <div class="stats">
-          <div>
-            <strong>12+</strong>
-            <span>conceitos</span>
-          </div>
-          <div>
-            <strong>3D</strong>
-            <span>renders</span>
-          </div>
-          <div>
-            <strong>UX</strong>
-            <span>apresentação</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Cartão visual ao lado do conteúdo principal; pode conter ilustração do carro e estatísticas -->
+<div class="hero-card">
+<div class="car-preview">
+<!-- Elementos decorativos que provavelmente são estilizados via CSS para formar o carro -->
+<div class="car-body"></div>
+<div class="wheel wheel-left"></div>
+<div class="wheel wheel-right"></div>
+</div>
+<!-- Bloco de estatísticas rápidas -->
+<div class="stats">
+<div>
+<strong>12+</strong>
+<span>conceitos</span>
+</div>
+<div>
+<strong>3D</strong>
+<span>renders</span>
+</div>
+<div>
+<strong>UX</strong>
+<span>apresentação</span>
+</div>
+</div>
+</div>
+</section>
 
-    <section class="section" id="projetos">
-      <div class="section-header">
-        <p class="tag">Portfólio</p>
-        <h2>Projetos em destaque</h2>
-      </div>
+<!-- Seção de projetos com id para âncora -->
+<section class="section" id="projetos">
+<div class="section-header">
+<p class="tag">Portfólio</p>
+<h2>Projetos em destaque</h2>
+</div>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-image gradient-1"></div>
-          <h3>Astra GT</h3>
-          <p>Conceito esportivo com linhas agressivas e proporção baixa.</p>
-          <button class="project-btn" data-project="Astra GT">Ver detalhes</button>
-        </article>
+<!-- Grade de projetos; cada projeto é um article semântico -->
+<div class="projects-grid">
+<article class="project-card">
+<!-- Div para imagem/placeholder; gradient-1 sugere variações de estilo por projeto -->
+<div class="project-image gradient-1"></div>
+<h3>Astra GT</h3>
+<p>Conceito esportivo com linhas agressivas e proporção baixa.</p>
+<!-- Botão que provavelmente abre um modal; usa data-attribute para identificar o projeto -->
+<button class="project-btn" data-project="Astra GT">Ver detalhes</button>
+</article>
 
-        <article class="project-card">
-          <div class="project-image gradient-2"></div>
-          <h3>Nova Urban EV</h3>
-          <p>Hatch elétrico pensado para mobilidade urbana premium.</p>
-          <button class="project-btn" data-project="Nova Urban EV">Ver detalhes</button>
-        </article>
+<article class="project-card">
+<div class="project-image gradient-2"></div>
+<h3>Nova Urban EV</h3>
+<p>Hatch elétrico pensado para mobilidade urbana premium.</p>
+<button class="project-btn" data-project="Nova Urban EV">Ver detalhes</button>
+</article>
 
-        <article class="project-card">
-          <div class="project-image gradient-3"></div>
-          <h3>Torque X</h3>
-          <p>SUV conceitual com presença robusta e iluminação futurista.</p>
-          <button class="project-btn" data-project="Torque X">Ver detalhes</button>
-        </article>
-      </div>
-    </section>
+<article class="project-card">
+<div class="project-image gradient-3"></div>
+<h3>Torque X</h3>
+<p>SUV conceitual com presença robusta e iluminação futurista.</p>
+<button class="project-btn" data-project="Torque X">Ver detalhes</button>
+</article>
+</div>
+</section>
 
-    <section class="section dark" id="processo">
-      <div class="section-header">
-        <p class="tag">Etapas</p>
-        <h2>Processo criativo</h2>
-      </div>
+<!-- Seção do processo criativo com variação visual (classe dark) -->
+<section class="section dark" id="processo">
+<div class="section-header">
+<p class="tag">Etapas</p>
+<h2>Processo criativo</h2>
+</div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <span>01</span>
-          <h3>Pesquisa</h3>
-          <p>Referências, público-alvo, tendências e briefing do projeto.</p>
-        </div>
-        <div class="timeline-item">
-          <span>02</span>
-          <h3>Sketch</h3>
-          <p>Exploração de volumes, proporções e linguagem formal.</p>
-        </div>
-        <div class="timeline-item">
-          <span>03</span>
-          <h3>Modelagem</h3>
-          <p>Construção digital e refinamento de superfícies.</p>
-        </div>
-        <div class="timeline-item">
-          <span>04</span>
-          <h3>Render final</h3>
-          <p>Iluminação, materiais e apresentação visual impactante.</p>
-        </div>
-      </div>
-    </section>
+<!-- Linha do tempo com itens sequenciais -->
+<div class="timeline">
+<div class="timeline-item">
+<span>01</span>
+<h3>Pesquisa</h3>
+<p>Referências, público-alvo, tendências e briefing do projeto.</p>
+</div>
+<div class="timeline-item">
+<span>02</span>
+<h3>Sketch</h3>
+<p>Exploração de volumes, proporções e linguagem formal.</p>
+</div>
+<div class="timeline-item">
+<span>03</span>
+<h3>Modelagem</h3>
+<p>Construção digital e refinamento de superfícies.</p>
+</div>
+<div class="timeline-item">
+<span>04</span>
+<h3>Render final</h3>
+<p>Iluminação, materiais e apresentação visual impactante.</p>
+</div>
+</div>
+</section>
 
-    <section class="section" id="sobre">
-      <div class="about">
-        <div>
-          <p class="tag">Sobre o projeto</p>
-          <h2>Um site para apresentar visão e identidade de design.</h2>
-          <p>
-            Este modelo foi criado para estudantes, designers e estúdios que desejam mostrar seu trabalho com clareza e sofisticação.
-            O layout valoriza processo, imagem e narrativa visual.
-          </p>
-        </div>
-        <div class="about-box">
-          <h3>Recursos</h3>
-          <ul>
-            <li>Layout responsivo</li>
-            <li>Menu mobile</li>
-            <li>Animações suaves</li>
-            <li>Cartões interativos</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<!-- Seção sobre o projeto/propósito do site -->
+<section class="section" id="sobre">
+<div class="about">
+<div>
+<p class="tag">Sobre o projeto</p>
+<h2>Um site para apresentar visão e identidade de design.</h2>
+<p>
+Este modelo foi criado para estudantes, designers e estúdios que desejam mostrar seu trabalho com clareza e sofisticação.
+O layout valoriza processo, imagem e narrativa visual.
+</p>
+</div>
+<!-- Caixa com lista de recursos -->
+<div class="about-box">
+<h3>Recursos</h3>
+<ul>
+<li>Layout responsivo</li>
+<li>Menu mobile</li>
+<li>Animações suaves</li>
+<li>Cartões interativos</li>
+</ul>
+</div>
+</div>
+</section>
 
-    <section class="section" id="contato">
-      <div class="section-header">
-        <p class="tag">Contato</p>
-        <h2>Vamos falar sobre o seu projeto</h2>
-      </div>
+<!-- Seção de contato com formulário simples -->
+<section class="section" id="contato">
+<div class="section-header">
+<p class="tag">Contato</p>
+<h2>Vamos falar sobre o seu projeto</h2>
+</div>
 
-      <form class="contact-form">
-        <div class="form-row">
-          <input type="text" placeholder="Seu nome" />
-          <input type="email" placeholder="Seu e-mail" />
-        </div>
-        <input type="text" placeholder="Assunto" />
-        <textarea rows="6" placeholder="Descreva sua ideia de projeto"></textarea>
-        <button type="submit" class="btn primary">Enviar mensagem</button>
-      </form>
-    </section>
-  </main>
+<!-- Formulário sem attributes action/method — provavelmente acionado via JavaScript -->
+<form class="contact-form">
+<div class="form-row">
+<!-- Campos de entrada para nome e e-mail -->
+<input type="text" placeholder="Seu nome" />
+<input type="email" placeholder="Seu e-mail" />
+</div>
+<input type="text" placeholder="Assunto" />
+<textarea rows="6" placeholder="Descreva sua ideia de projeto"></textarea>
+<!-- Botão submit; sem type especificado é 'submit' por padrão, aqui explicitado -->
+<button type="submit" class="btn primary">Enviar mensagem</button>
+</form>
+</section>
+</main>
 
-  <footer class="footer">
-    <p>AutoForm Design © 2026 — Projeto de design automotivo.</p>
-  </footer>
+<!-- Rodapé simples com copyright e ano -->
+<footer class="footer">
+<p>AutoForm Design © 2026 — Projeto de design automotivo.</p>
+</footer>
 
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <button class="close-btn" id="closeBtn">×</button>
-      <h3 id="modalTitle">Projeto</h3>
-      <p id="modalText">Detalhes do projeto serão exibidos aqui.</p>
-    </div>
-  </div>
+<!-- Modal oculto por padrão; exibido quando o usuário clica em "Ver detalhes" -->
+<div class="modal" id="modal">
+<div class="modal-content">
+<!-- Botão para fechar modal; ligado ao JavaScript via id -->
+<button class="close-btn" id="closeBtn">×</button>
+<h3 id="modalTitle">Projeto</h3>
+<p id="modalText">Detalhes do projeto serão exibidos aqui.</p>
+</div>
+</div>
 
-  <script src="script.js"></script>
+<!-- Inclusão do script JavaScript que adiciona interatividade (menu, modal, formulários) -->
+<script src="script.js"></script>
 </body>
 </html>
